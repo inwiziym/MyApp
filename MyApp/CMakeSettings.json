@@ -1,0 +1,31 @@
+{
+    "configurations": [
+      {
+        "name": "Windows-ARM64-Release",
+        "generator": "Ninja",
+        "configurationType": "Release",
+        "buildRoot": "${projectDir}\\out\\build\\${name}",
+        "installRoot": "${projectDir}\\out\\install\\${name}",
+        "buildCommandArgs": "",
+        "ctestCommandArgs": "",
+        "inheritEnvironments": [ "msvc_arm64_x64" ],
+        "variables": [
+          {
+            "name": "BUILD_SHARED_LIBS",
+            "value": "False",
+            "type": "BOOL"
+          },
+          {
+            "name": "BUILD_ARCH",
+            "value": "ARM64",
+            "type": "STRING"
+          },
+          {
+            "name": "WARNINGS_AS_ERRORS",
+            "value": "False",
+            "type": "BOOL"
+          }
+        ]
+      }
+    ]
+  }
